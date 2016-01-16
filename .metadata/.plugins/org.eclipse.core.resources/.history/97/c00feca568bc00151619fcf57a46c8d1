@@ -1,0 +1,6 @@
+
+public class OptimalGuesser {
+public int nbrGuesses(NumberToGuess){
+	return 0;
+}
+}

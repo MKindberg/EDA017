@@ -1,0 +1,18 @@
+
+public class OptimalGuesser {
+	public static int nbrGuesses(NumberToGuess n) {
+		int min = n.getMin();
+		int max = n.getMax();
+		int guess = (max - min) / 2 + min;
+		int i = 1;
+		for (; !n.isEqual(guess); i++) {
+			if (n.isBiggerThan(guess))
+				min = guess;
+			else
+				max = guess;
+			guess = (max - min) / 2 + min+1;
+
+		}
+		return i;
+	}
+}
