@@ -1,0 +1,9 @@
+
+public class TestSquareContain {
+	public static void main(String[] args) {
+		boolean[] test = new boolean[5];
+		Square sq = new Square(100, 100, 100);
+		test[0] = sq.contains(120, 120);
+		test[1] = sq.contains(99, 99);
+	}
+}
