@@ -4,13 +4,16 @@
 	<item value="7" key="clean_up_save_particpant_modify_dialog.preferred_y"/>
 	<item value="887" key="clean_up_save_particpant_modify_dialog.preferred_width"/>
 	<item value="614" key="clean_up_save_particpant_modify_dialog.preferred_height"/>
-	<item value="4" key="clean_up_save_particpant_modify_dialog.last_focus"/>
-	<item value="-1" key="org.eclipse.jdt.uiformatter_page.modify_dialog_tab_page.last_focus_index"/>
+	<item value="1" key="clean_up_save_particpant_modify_dialog.last_focus"/>
+	<item value="3" key="org.eclipse.jdt.uiformatter_page.modify_dialog_tab_page.last_focus_index"/>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item value="false" key="renameSubpackages"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="*" key="patterns"/>
 		<item value="false" key="updateSimilarElements"/>
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
@@ -30,6 +33,9 @@
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="NewPackageWizardPage">
+		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="completion_proposal_size">
 		<item value="221" key="contextSelector.size.y"/>

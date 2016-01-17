@@ -1,0 +1,15 @@
+package uppg4;
+
+import java.util.Random;
+
+public class Main {
+
+	
+	public static String encrypt(String plainText, long key){
+		Random r = new Random(key);
+		StringBuilder sb=new StringBuilder();
+		for(int i=0;i<plainText.length();i++)
+			sb.append(plainText.charAt(i)+r.nextInt()%256);
+		return sb.toString();
+	}
+}
