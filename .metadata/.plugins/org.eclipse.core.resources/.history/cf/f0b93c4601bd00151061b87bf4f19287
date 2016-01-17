@@ -1,0 +1,36 @@
+import java.util.Random;
+
+public class CardDeck {
+
+	private Card[] cards;
+	private int current; // index för "nästa" kosrt
+	private static Random rand = new Random();
+
+	/** Skapar en kortlek. */
+	public CardDeck() {
+		cards = new Card[52];
+		current=0;
+		for(int suit=Card.SPADES;suit<Card.CLUBS;suit++)
+			for(int rank=1;rank<14;rank++){
+				cards[current]=new Card(suit, rank);
+				current++;
+			}
+		current=0;
+	}
+
+	/** Blandar kortleken. */
+	public void shuffle() {
+
+	}
+
+	/** Tar reda på om det finns fler kort i kortleken. */
+	public boolean moreCards() {
+		return false;
+	}
+
+	/** Drar det översta kortet i leken. */
+	public Card getCard() {
+		return null;
+	}
+
+}

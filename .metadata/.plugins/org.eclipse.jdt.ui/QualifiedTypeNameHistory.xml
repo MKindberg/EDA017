@@ -2,6 +2,13 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="SimpleWindowExample"/>
 <fullyQualifiedTypeName name="SquareDrawer"/>
-<fullyQualifiedTypeName name="se.lth.cs.pt.window.SimpleWindow"/>
 <fullyQualifiedTypeName name="se.lth.cs.pt.square.Square"/>
+<fullyQualifiedTypeName name="Point"/>
+<fullyQualifiedTypeName name="Square"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="OptimalGuesser"/>
+<fullyQualifiedTypeName name="NumberToGuess"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="se.lth.cs.pt.window.SimpleWindow"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,21 @@
+
+public class Solitaire {
+	public static void main(String[] args) {
+		CardDeck deck = new CardDeck();
+		for (int j = 0; j < 1000; j++) {
+			deck.shuffle();
+			int i = 0;
+			while (deck.moreCards()) {
+				if (deck.getCard().getRank() == (i % 3) + 1) {
+					break;
+				}
+				i++;
+			}
+			if (i == 52)
+				System.out.println("Grattis, du lyckades! 😀 ");
+			else
+				System.out.println("Tyvärr, du misslyckades 🙁");
+
+		}
+	}
+}

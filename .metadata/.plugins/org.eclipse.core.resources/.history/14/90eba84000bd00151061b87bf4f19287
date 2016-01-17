@@ -1,0 +1,29 @@
+import java.util.Random;
+
+public class CardDeck {
+
+	private Card[] cards;
+	private int current;
+	private static Random rand = new Random();
+
+	/** Skapar en kortlek. */
+	public CardDeck() {
+
+	}
+
+	/** Blandar kortleken. */
+	public void shuffle() {
+
+	}
+
+	/** Tar reda på om det finns fler kort i kortleken. */
+	public boolean moreCards() {
+		return false;
+	}
+
+	/** Drar det översta kortet i leken. */
+	public Card getCard() {
+		return null;
+	}
+
+}
