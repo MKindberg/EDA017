@@ -1,0 +1,6 @@
+
+public class uppg1 {
+public static void main(String[] args) {
+	Experiment e =new Experiment(new Die(), new Die());
+}
+}

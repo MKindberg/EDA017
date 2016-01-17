@@ -11,4 +11,5 @@
 <fullyQualifiedTypeName name="NumberToGuess"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="se.lth.cs.pt.window.SimpleWindow"/>
+<fullyQualifiedTypeName name="Card"/>
 </qualifiedTypeNameHistroy>

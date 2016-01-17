@@ -1,0 +1,16 @@
+package uppg2;
+
+public class Main {
+
+	public static int[] nbrDigits(int start, int stop, int interval){
+		int[] res = new int[10];
+		for(int i = start;i<=stop;i+=interval){
+			int n=i;
+			while(n!=0){
+				res[n%10]++;
+				n/=10;
+			}
+		}
+		return res;
+	}
+}

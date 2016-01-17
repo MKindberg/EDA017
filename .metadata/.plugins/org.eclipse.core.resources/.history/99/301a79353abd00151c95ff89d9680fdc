@@ -1,0 +1,8 @@
+
+public class Die {
+	Random r;
+	public Die(){
+		r = new Random();
+	}
+	
+}

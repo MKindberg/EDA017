@@ -1,0 +1,10 @@
+import java.util.Random;
+
+public class Die {
+	Random r;
+
+	public Die() {
+		r = new Random();
+	}
+
+}
