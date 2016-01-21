@@ -1,0 +1,37 @@
+package life;
+
+public class Life {
+	private LifeBoard lb;
+
+	public Life(LifeBoard lb) {
+		this.lb = lb;
+	}
+
+	public void newGeneration() {
+		lb.increaseGeneration();
+		LifeBoard temp = new LifeBoard(lb.getRows(), lb.getCols());
+		for (int r = 0; r < lb.getRows(); r++)
+			for (int c = 0; c < lb.getRows(); c++)
+				if (neighbours(r, c) == 3)
+					temp.put(r, c, true);
+	}
+
+	public void flip(int row, int col) {
+		lb.put(row, col, !lb.get(row, col));
+	}
+
+	private int neighbours(int row, int col) {
+		int n = 0;
+		int r = -1;
+		int c = -1;
+		if (row == 0)
+			r = 0;
+		if (col == 0)
+			c = 0;
+		for (; r <= 1; r++)
+			for (; c <= 1; c++)
+				if (!(r == 0 && c == 0) && lb.get(r, c))
+					n++;
+		return n;
+	}
+}

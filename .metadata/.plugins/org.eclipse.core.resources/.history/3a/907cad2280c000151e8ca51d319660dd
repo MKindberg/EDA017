@@ -1,0 +1,42 @@
+package life;
+
+public class Life {
+	private LifeBoard lb;
+
+	public Life(LifeBoard lb) {
+		this.lb = lb;
+	}
+
+	public void newGeneration() {
+		lb.increaseGeneration();
+		boolean[][] temp = new boolean[lb.getRows()][lb.getCols()];
+		for (int r = 0; r < lb.getRows(); r++)
+			for (int c = 0; c < lb.getRows(); c++) {
+				if (lb.get(r, c) && (neighbours(r, c) == 2 || neighbours(r, c) == 3))
+					temp[r][c] = true;
+				if (lb.get(r, c) && (neighbours(r, c) < 2 || neighbours(r, c) > 3))
+					temp[r][c] = false;
+				if (neighbours(r, c) == 3)
+					temp[r][c] = lb.get(r, c);
+			}
+
+		for (int r = 0; r < lb.getRows(); r++)
+			for (int c = 0; c < lb.getCols(); c++)
+				lb.put(r, c, temp[r][c]);
+	}
+
+	public void flip(int row, int col) {
+		lb.put(row, col, !lb.get(row, col));
+	}
+
+	private int neighbours(int row, int col) {
+		int totalNeighbours = 0;
+		for (int i = -1; i <= 1; ++i)
+			for (int j = -1; j <= 1; ++j)
+				if (lb.get(i + row, j + col))
+					++totalNeighbours;
+		if (lb.get(row, col))
+			return totalNeighbours - 1;
+		return totalNeighbours;
+	}
+}

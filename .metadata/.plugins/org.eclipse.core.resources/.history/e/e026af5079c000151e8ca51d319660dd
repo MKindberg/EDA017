@@ -1,0 +1,9 @@
+package life;
+
+public class Life {
+	private LifeBoard lb;
+	
+	public Life(LifeBoard lb){
+		this.lb=lb;
+	}
+}

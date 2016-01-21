@@ -1,0 +1,18 @@
+package life;
+
+public class LifeController {
+	public static void main(String[] args) {
+		LifeBoard board = new LifeBoard(3, 3);
+		LifeView window = new LifeView(board);
+		window.drawBoard();
+		Life l = new Life(board);
+		while(true){
+		if (window.getCommand() == 1)
+			l.flip(window.getRow(), window.getCol());
+		if (window.getCommand() == 3)
+			l.newGeneration();
+		if (window.getCommand() == 3)
+			System.exit(0);
+		}
+	}
+}
