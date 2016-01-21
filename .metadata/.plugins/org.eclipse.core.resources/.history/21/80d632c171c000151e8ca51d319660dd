@@ -1,0 +1,11 @@
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class MazeTurtle {
+	private Turtle turtle;
+	private SimpleWindow w;
+
+	public MazeTurtle(Turtle turtle) {
+		this.turtle = turtle;
+
+	}
+}

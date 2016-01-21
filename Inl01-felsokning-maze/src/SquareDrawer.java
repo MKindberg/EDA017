@@ -23,13 +23,12 @@ public class SquareDrawer {
 			int y = scan.nextInt();
 
 			// Kolla om hela kvadraten ligger innanför fönstret
-			if (x + side < w.getHeight() && y + side < w.getWidth()) {
-				Square sq = new Square(side, x, y);
+			if (y + side < w.getHeight() && x + side < w.getWidth()) {
+				Square sq = new Square(x, y, side);
 				sq.draw(w);
 				System.out.println("Kvadraten är nu uppritad.");
-			} else {
+			} else
 				System.out.println("Kvadraten får inte plats i fönstret. Försök rita upp en ny.");
-			}
 		}
 	}
 

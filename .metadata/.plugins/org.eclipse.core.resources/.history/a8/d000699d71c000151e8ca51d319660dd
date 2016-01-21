@@ -1,0 +1,9 @@
+public class MazeTurtle {
+	private Turtle turtle;
+	private SimpleWindow w;
+
+	public MazeTurtle(Turtle turtle) {
+		this.turtle = turtle;
+		
+	}
+}

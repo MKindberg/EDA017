@@ -1,0 +1,32 @@
+import se.lth.cs.pt.maze.Maze;
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class MazeTurtle {
+	private Turtle t;
+	private SimpleWindow w;
+
+	public MazeTurtle(Turtle turtle, SimpleWindow w) {
+		t = turtle;
+		this.w = w;
+		t.penDown();
+	}
+
+	public void walk(Maze m) {
+		m.draw(w);
+		t.jumpTo(m.getXEntry(), m.getYEntry());
+		while (!m.atExit(t.getX(), t.getY())) {
+			if (m.wallInFront(t.getDirection(), t.getX(), t.getY()))
+				t.left(90);
+			else if (!m.wallAtLeft(t.getDirection(), t.getX(), t.getY()))
+				t.left(90);
+			else
+				t.forward(1);
+			Maze.delay(300);
+		}
+	}
+
+	public static void main(String[] args) {
+		Turtle t = new Turtle()
+	}
+
+}

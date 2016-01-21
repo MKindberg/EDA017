@@ -1,0 +1,8 @@
+
+public class MazeWalker {
+	private Turtle turtle;
+
+	public MazeWalker(Turtle turtle) {
+
+	}
+}
