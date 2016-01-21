@@ -21,17 +21,15 @@ public class MazeTurtle {
 			if (m.wallAtLeft(t.getDirection(), t.getX(), t.getY())
 					&& m.wallInFront(t.getDirection(), t.getX(), t.getY()))
 				t.left(-90);
-			else if (m.wallAtLeft(t.getDirection(), t.getX(), t.getY())) {
+			else if (m.wallAtLeft(t.getDirection(), t.getX(), t.getY())){
 				t.forward(1);
 				steps++;
-			} else {
+			else {
 				t.left(90);
 				t.forward(1);
-				steps++;
 			}
 			Maze.delay(20);
 		}
-		System.out.println("Sköldpaddan kom i mål efter " + steps + " steg!");
 	}
 
 	public static void main(String[] args) {

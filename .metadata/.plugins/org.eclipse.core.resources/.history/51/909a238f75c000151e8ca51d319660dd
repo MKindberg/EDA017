@@ -31,7 +31,7 @@ public class MazeTurtle {
 			}
 			Maze.delay(20);
 		}
-		System.out.println("Sköldpaddan kom i mål efter " + steps + " steg!");
+		System.out.println("Sköldpaddan kom i mål efter "+steps+" steg!");
 	}
 
 	public static void main(String[] args) {
