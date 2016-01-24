@@ -1,0 +1,23 @@
+import java.util.Random;
+
+public class RaceTurtle {
+
+	private Turtle t;
+	private int nbr;
+	private RaceWindow w;
+
+	private Random r;
+
+	public RaceTurtle(RaceWindow w, int nbr) {
+		this.nbr = nbr;
+		this.w = w;
+
+		t = new Turtle(w, RaceWindow.getStartXPos(nbr), RaceWindow.getStartYPos(nbr));
+		t.penDown();
+		t.left(-90);
+	}
+
+	public void raceStep() {
+
+	}
+}

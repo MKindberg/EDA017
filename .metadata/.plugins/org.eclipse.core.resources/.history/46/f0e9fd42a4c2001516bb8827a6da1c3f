@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class TurtleRace {
+	ArrayList<RaceTurtle> turtles;
+	RaceWindow w;
+
+	public TurtleRace(RaceWindow w) {
+		this.w = w;
+	}
+}

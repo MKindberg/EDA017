@@ -1,0 +1,10 @@
+public class RaceTurtle {
+
+	private int nbr;
+	private RaceWindow w;
+
+	public RaceTurtle(RaceWindow w, int nbr) {
+		this.nbr = nbr;
+		this.w = w;
+	}
+}

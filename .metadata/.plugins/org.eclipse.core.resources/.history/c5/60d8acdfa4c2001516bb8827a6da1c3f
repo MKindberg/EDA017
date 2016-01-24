@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class TurtleRace {
+	ArrayList<RaceTurtle> turtles;
+	ArrayList<RaceTurtle> finished;
+	RaceWindow w;
+
+	public TurtleRace(RaceWindow w) {
+		this.w = w;
+		turtles = new ArrayList<RaceTurtle>();
+		for (int i = 1; i <= turtles.size(); i++)
+			turtles.add(new RaceTurtle(w, i));
+
+	}
+
+	public void race(){
+		while()
+	}
+}

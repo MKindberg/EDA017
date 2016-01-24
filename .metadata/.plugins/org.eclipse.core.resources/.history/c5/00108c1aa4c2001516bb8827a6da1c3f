@@ -1,0 +1,8 @@
+
+public class TurtleRace {
+	ArrayList<RaceTurtle> turtles;
+	
+	public TurtleRace(){
+		
+	}
+}

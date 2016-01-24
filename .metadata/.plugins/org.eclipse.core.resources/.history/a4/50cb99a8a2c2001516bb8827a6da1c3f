@@ -1,0 +1,15 @@
+public class RaceTurtle {
+
+	private Turtle t;
+	private int nbr;
+	private RaceWindow w;
+
+	public RaceTurtle(RaceWindow w, int nbr) {
+		this.nbr = nbr;
+		this.w = w;
+		t = new Turtle(w, RaceWindow.getStartXPos(nbr), RaceWindow.getStartYPos(nbr));
+		t.penDown();
+		t.left(-90);
+
+	}
+}
