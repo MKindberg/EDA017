@@ -1,0 +1,27 @@
+import java.util.Random;
+
+public class AbsentMindedTurtle extends RaceTurtle {
+
+	Random r;
+	private int absentRate;
+
+	public AbsentMindedTurtle(RaceWindow w, int nbr, int absentRate) {
+		super(w, nbr);
+		r = new Random();
+		this.absentRate=absentRate;
+	}
+
+	public void raceStep() {
+		int dig = r.nextInt(10);
+		if (dig > 6)
+			penUp();
+		else if (dig < 3)
+			penDown();
+		super.raceStep();
+	}
+
+	public String toString() {
+		return super.toString() + " - MoleTurtle";
+	}
+
+}

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class TurtleRace {
 	ArrayList<RaceTurtle> turtles;
@@ -9,8 +10,22 @@ public class TurtleRace {
 		this.w = w;
 		turtles = new ArrayList<RaceTurtle>();
 		finished = new ArrayList<RaceTurtle>();
+		Random r = new Random();
 		for (int i = 1; i <= 8; i++)
-			turtles.add(new RaceTurtle(w, i));
+			switch (r.nextInt(3)) {
+			case 0:
+				turtles.add(new MoleTurtle(w, i));
+				System.out.println(turtles.get(i - 1));
+				break;
+			case 1:
+				turtles.add(new AbsentMindedTurtle(w, i, r.nextInt(101)));
+				System.out.println(turtles.get(i - 1));
+				break;
+			case 2:
+				turtles.add(new DizzyTurtle(w, i, r.nextInt(5) + 1));
+				System.out.println(turtles.get(i - 1));
+				break;
+			}
 
 	}
 
@@ -29,7 +44,7 @@ public class TurtleRace {
 		}
 
 		for (int i = 0; i < 3; i++)
-			System.out.println("På plats " + (i + 1) + " " + finished.get(i));
+			System.out.println("På plats " + (i + 1) + ": " + finished.get(i));
 	}
 
 	public static void main(String[] args) {
