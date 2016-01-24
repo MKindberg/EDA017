@@ -9,7 +9,9 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="OptimalGuesser"/>
 <fullyQualifiedTypeName name="NumberToGuess"/>
-<fullyQualifiedTypeName name="se.lth.cs.pt.window.SimpleWindow"/>
 <fullyQualifiedTypeName name="Card"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="se.lth.cs.pt.window.SimpleWindow"/>
+<fullyQualifiedTypeName name="se.lth.cs.pt.maze.Maze"/>
+<fullyQualifiedTypeName name="life.LifeBoard"/>
 </qualifiedTypeNameHistroy>

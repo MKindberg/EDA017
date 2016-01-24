@@ -2,7 +2,7 @@ package life;
 
 public class LifeController {
 	public static void main(String[] args) {
-		LifeBoard board = new LifeBoard(3, 3);
+		LifeBoard board = new LifeBoard(19, 19);
 		LifeView window = new LifeView(board);
 		window.drawBoard();
 		Life l = new Life(board);
