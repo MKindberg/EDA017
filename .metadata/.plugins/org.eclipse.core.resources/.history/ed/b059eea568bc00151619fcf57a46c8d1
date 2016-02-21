@@ -1,6 +1,0 @@
-
-public class OptimalGuesser {
-	public int nbrGuesses(NumberToGuess n){
-		return 0;
-	}
-}

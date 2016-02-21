@@ -1,7 +1,0 @@
-package life;
-
-public class LifeController {
-	public static void main(String[] args) {
-
-	}
-}

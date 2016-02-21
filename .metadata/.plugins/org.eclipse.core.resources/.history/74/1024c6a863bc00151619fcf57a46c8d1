@@ -1,7 +1,0 @@
-
-public class TestSquareContain {
-	public static void main(String[] args) {
-		boolean[] test = new boolean[5];
-		Square sq1 = new Square(100, 100, 100);
-	}
-}

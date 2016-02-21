@@ -10,8 +10,18 @@
 <fullyQualifiedTypeName name="OptimalGuesser"/>
 <fullyQualifiedTypeName name="NumberToGuess"/>
 <fullyQualifiedTypeName name="Card"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="se.lth.cs.pt.window.SimpleWindow"/>
 <fullyQualifiedTypeName name="se.lth.cs.pt.maze.Maze"/>
 <fullyQualifiedTypeName name="life.LifeBoard"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+<fullyQualifiedTypeName name="RaceWindow"/>
+<fullyQualifiedTypeName name="TurtleRace"/>
+<fullyQualifiedTypeName name="MoleTurtle"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="AbsentMindedTurtle"/>
+<fullyQualifiedTypeName name="DizzyTurtle"/>
+<fullyQualifiedTypeName name="Bank"/>
+<fullyQualifiedTypeName name="Customer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="BankAccount"/>
 </qualifiedTypeNameHistroy>

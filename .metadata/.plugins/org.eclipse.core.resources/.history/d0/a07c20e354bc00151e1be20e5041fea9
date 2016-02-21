@@ -1,7 +1,0 @@
-import se.lth.cs.pt.window.SimpleWindow;
-
-public class LineDrawing {
-	public static void main(String[] args) {
-		SimpleWindow=new SimpleWindow(500, 500, "LineDrawing"))
-	}
-}

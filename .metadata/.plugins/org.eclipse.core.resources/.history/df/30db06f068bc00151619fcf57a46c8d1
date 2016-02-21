@@ -1,9 +1,0 @@
-
-public class OptimalGuesser {
-	public int nbrGuesses(NumberToGuess n) {
-		int min=n.getMin();
-		int max=n.getMax();
-		int guess = (max-min)/2+min;
-		return 0;
-	}
-}

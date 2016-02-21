@@ -1,7 +1,0 @@
-public class MazeTurtle {
-	private Turtle turtle;
-
-	public MazeTurtle(Turtle turtle) {
-		this.turtle = turtle;
-	}
-}
